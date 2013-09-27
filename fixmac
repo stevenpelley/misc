@@ -1,0 +1,2 @@
+mac=`ifconfig -a | grep "HWaddr" | cut -d " " -f 11`
+echo "eth0 mac $mac arp 1" > /etc/iftab
